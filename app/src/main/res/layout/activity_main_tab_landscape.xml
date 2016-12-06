@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FirstActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <ImageView
+            android:contentDescription="@string/shapes_text_content"
+            android:id="@+id/randomImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/shapes_square" />
+
+        <ImageView
+            android:contentDescription="@string/shapes_text_content"
+            android:id="@+id/status"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:contentDescription="@string/shapes_text_content"
+            android:id="@+id/vegetables"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/vegetables"
+            android:onClick="validate"
+            android:clickable="true" />
+
+        <ImageView
+            android:contentDescription="@string/shapes_text_content"
+            android:id="@+id/fruits"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/fruits"
+            android:onClick="validate"
+            android:clickable="true" />
+
+        <ImageView
+            android:contentDescription="@string/shapes_text_content"
+            android:id="@+id/animalImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="validate"
+            android:src="@drawable/animals"
+            android:clickable="true" />
+
+        <ImageView
+            android:contentDescription="@string/shapes_text_content"
+            android:id="@+id/bodypartImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/bodyparts"
+            android:onClick="validate"
+            android:clickable="true" />
+
+    </LinearLayout>
+</LinearLayout>
+
